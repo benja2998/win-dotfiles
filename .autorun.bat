@@ -10,6 +10,7 @@ rem Set environment variables
 set EDITOR=nvim
 
 rem Define aliases
+doskey pwd=cd
 doskey vim=nvim $*
 doskey ls=dir/b
 doskey ll=dir/a
