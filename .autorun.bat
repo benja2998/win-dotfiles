@@ -37,7 +37,7 @@ doskey clr=cls
 doskey rm=del /Q $*
 doskey mv=move $*
 doskey cp=copy $*
-doskey cat=type $*
+doskey cat=bat -pP $*
 
 rem Modify PATH
 set "PATH=%~dp0scripts;%PATH%"
