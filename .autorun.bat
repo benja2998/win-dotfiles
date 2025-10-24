@@ -11,9 +11,9 @@ if %errorlevel%==0 (
 
 rem Set a bash-like prompt
 if "%IS_ADMIN%"=="0" (
-    prompt $E[32m%USERNAME%@%COMPUTERNAME%$E[0m:$E[34m$P$E[0m$$$S
+   prompt $E[32m%USERNAME%@%COMPUTERNAME%$E[0m $E[34m$P$E[0m $$$S
 ) else (
-    prompt $E[31m%USERNAME%$E[0m@%COMPUTERNAME%:$P#$S
+   prompt $E[31m%USERNAME%$E[0m@%COMPUTERNAME% $P #$S
 )
 
 rem Set environment variables
@@ -24,9 +24,9 @@ rem Define aliases
 doskey pwd=cd
 doskey sudo=gsudo $*
 doskey su=gsudo
+doskey sudo.ti=gsudo --ti $* & rem TrustedInstaller
+doskey sudo.system=gsudo -s $* & rem SYSTEM
 doskey alias=doskey /macros
-doskey become_trustedinstaller=gsudo --ti
-doskey become_system=gsudo -s
 doskey vim=nvim $*
 doskey ls=dir/b $*
 doskey ll=dir/a $*
