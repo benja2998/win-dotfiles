@@ -28,16 +28,16 @@ doskey sudo.ti=gsudo --ti $* & rem TrustedInstaller
 doskey sudo.system=gsudo -s $* & rem SYSTEM
 doskey alias=doskey /macros
 doskey vim=nvim $*
-doskey ls=dir/b $*
-doskey ll=dir/a $*
-doskey la=dir/b/a $*
-doskey l=dir $*
 doskey clear=cls
 doskey clr=cls
 doskey rm=del /Q $*
 doskey mv=move $*
 doskey cp=copy $*
 doskey cat=bat -pP $*
+doskey ls=eza --color=auto $*
+doskey ll=eza -lha --color=auto $*
+doskey la=eza -a --color=auto $*
+doskey l=eza -lh --color=auto $*
 
 rem Modify PATH
 set "PATH=%~dp0scripts;%PATH%"
