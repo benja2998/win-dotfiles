@@ -28,5 +28,13 @@ del /f /q "%LOCALAPPDATA%\nvim\init.lua"
 mklink "%LOCALAPPDATA%\nvim\init.lua" "%~dp0init.lua"
 
 echo Symlink for Neovim init.lua created.
+
+rem Install programs
+winget install -e --id sharkdp.bat
+winget install -e --id eza-community.eza
+winget install -e --id gerardog.gsudo
+
+echo Programs installed.
+
 echo Dotfiles setup complete.
 pause >nul

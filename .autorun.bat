@@ -38,6 +38,7 @@ doskey ls=eza --color=auto $*
 doskey ll=eza -lha --color=auto $*
 doskey la=eza -a --color=auto $*
 doskey l=eza -lh --color=auto $*
+doskey which=where
 
 rem Modify PATH
 set "PATH=%~dp0scripts;%PATH%"
