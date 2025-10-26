@@ -6,14 +6,15 @@ if "%~1"=="" (
     exit /b
 )
 
-if exist "%~1" (
-    cd /d "%~1"
+if exist "%*" (
+    cd /d "%*"
     zoxide add "%cd%"
     exit /b
 )
 
-for /f "usebackq delims=" %%i in (`zoxide query "%*"`) do (
+for /f "usebackq delims=" %%i in (`zoxide query "%*" 2^>nul`) do (
     if errorlevel 1 (
+        echo zoxide error
         exit /b 1
     )
     cd /d "%%i"
