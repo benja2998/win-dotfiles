@@ -26,9 +26,14 @@ if "%~1"=="" (
         echo $ alias test=cls
         echo $ cls /?
         cls /?
-    ) else if "%~1"=="/fullhelp" (
-        doskey /?
     ) else (
-        doskey %* $*
+        set "valid="
+        for /f "tokens=1* delims==" %%A in ("%*") do set "valid=%%B"
+        if not defined valid (
+            echo Run 'alias /?' for help.
+            exit /b 1
+        ) else (
+            doskey %* $*
+        )
     )
 )
