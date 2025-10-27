@@ -18,8 +18,6 @@ if "%~1"=="" (
         echo %ESC%[1;4mCodes used for defining aliases%ESC%[0m
         echo.
         echo $T               : Command separator
-        echo $1-9             : Parameters passed to the alias
-        echo $*               : All parameters passed to the alias. Never use this!
         echo.
         echo %ESC%[1;4mExample usage of alias%ESC%[0m
         echo.
