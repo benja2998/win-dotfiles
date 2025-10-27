@@ -33,6 +33,7 @@ rem Install programs
 winget install -e --id sharkdp.bat
 winget install -e --id eza-community.eza
 winget install -e --id gerardog.gsudo
+winget install -e --id ajeetdsouza.zoxide
 
 echo Programs installed.
 
