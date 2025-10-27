@@ -21,6 +21,10 @@ set EDITOR=nvim
 set "HOME=%USERPROFILE%"
 
 rem Define aliases
+doskey exit=doskey /history ^>^> "%USERPROFILE%\.cmd_history" $T exit $*
+doskey savehist=doskey /history ^>^> "%USERPROFILE%\.cmd_history"
+doskey histgrep=findstr /i $* "%USERPROFILE%\.cmd_history"
+doskey viewhist=type "%USERPROFILE%\.cmd_history"
 doskey pwd=cd
 doskey sudo=gsudo $*
 doskey su=gsudo
