@@ -1,0 +1,12 @@
+pwd=cd
+sudo=gsudo $*
+su=gsudo
+sudo.ti=gsudo --ti $* & rem TrustedInstaller
+sudo.system=gsudo -s $* & rem SYSTEM
+vim=nvim $*
+cat=bat -pP $*
+ls=eza --color=auto $*
+ll=eza -lha --color=auto $*
+la=eza -a --color=auto $*
+l=eza -lh --color=auto $*
+e.=explorer .

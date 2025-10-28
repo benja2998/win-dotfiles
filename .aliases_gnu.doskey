@@ -1,0 +1,4 @@
+which=where $*
+rm=del /Q $*
+mv=move $*
+cp=copy $*
