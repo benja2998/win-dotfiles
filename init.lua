@@ -22,7 +22,12 @@ vim.opt.rtp:prepend(lazypath)
 -- highlight current line
 vim.opt.cursorline = true
 
+-- Set leader keys
 vim.g.mapleader = " "
+vim.g.maplocalleader = " "
+
+-- Disable space in normal and visual modes to avoid conflicts
+vim.keymap.set({'n','v'}, '<Space>', '<Nop>', { silent = true })
 
 require("lazy").setup({
     {
