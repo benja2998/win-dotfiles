@@ -22,6 +22,8 @@ vim.opt.rtp:prepend(lazypath)
 -- highlight current line
 vim.opt.cursorline = true
 
+vim.g.mapleader = " "
+
 require("lazy").setup({
     {
         "catppuccin/nvim",
