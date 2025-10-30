@@ -1,6 +1,10 @@
 Set-Alias -Name vim -Value nvim
 Set-Alias -Name sudo -Value gsudo
 
+Remove-Alias -Name ls
+
+Set-Alias -Name ls -Value eza
+
 function sudo.ti {
     sudo --ti
 }

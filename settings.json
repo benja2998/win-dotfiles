@@ -61,6 +61,10 @@
             "keys": "alt+shift+down"
         },
         {
+            "id": "Terminal.ClosePane",
+            "keys": "alt+x"
+        },
+        {
             "id": "Terminal.ResizePaneUp",
             "keys": "alt+shift+k"
         },
@@ -83,6 +87,10 @@
         {
             "id": null,
             "keys": "alt+shift+left"
+        },
+        {
+            "id": null,
+            "keys": "ctrl+shift+w"
         }
     ],
     "newTabMenu": 
@@ -96,7 +104,7 @@
         "defaults": 
         {
             "adjustIndistinguishableColors": "always",
-            "colorScheme": "One Half Dark",
+            "colorScheme": "Campbell",
             "cursorShape": "filledBox",
             "experimental.retroTerminalEffect": false,
             "font": 
