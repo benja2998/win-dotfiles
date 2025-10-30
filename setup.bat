@@ -29,6 +29,25 @@ mklink "%LOCALAPPDATA%\nvim\init.lua" "%~dp0init.lua"
 
 echo Symlink for Neovim init.lua created.
 
+set WT_SETTINGS=%LOCALAPPDATA%\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json
+set DOTFILES_SETTINGS=%~dp0settings.json
+
+rem Backup existing settings.json if it exists and is not a symlink
+if exist "%WT_SETTINGS%" (
+    dir "%WT_SETTINGS%" | find "<SYMLINK>" >nul
+    if errorlevel 1 (
+        rename "%WT_SETTINGS%" "settings.json.bak"
+    )
+)
+
+rem Remove existing settings.json if it is a file or broken symlink
+if exist "%WT_SETTINGS%" del "%WT_SETTINGS%"
+
+rem Create symlink from dotfiles
+mklink "%WT_SETTINGS%" "%DOTFILES_SETTINGS%"
+
+echo Windows Terminal settings.json symlinked to dotfiles.
+
 rem Install programs
 winget install -e --id sharkdp.bat
 winget install -e --id eza-community.eza
@@ -38,7 +57,6 @@ winget install -e --id ajeetdsouza.zoxide
 echo Programs installed.
 
 rem Set up powershell
-
 powershell -executionpolicy Bypass -noprofile -nologo -command "%~dp0install.ps1"
 
 echo Symlink for PowerShell profile created.
