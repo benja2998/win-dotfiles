@@ -12,6 +12,14 @@ vim.opt.showmode = false
 vim.opt.cursorline = true
 vim.opt.mouse = "a"
 
+-- Create splits
+vim.keymap.set('n', '<C-s>', '<C-w>s', { desc = 'Vertical split' })
+vim.keymap.set('n', '<C-v>', '<C-w>v', { desc = 'Horizontal split' })
+
+-- Close panes
+vim.keymap.set('n', '<C-c>', '<C-w>c', { desc = 'Close current pane' })
+vim.keymap.set('n', '<C-o>', '<C-w>o', { desc = 'Close all other panes' })
+
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
     vim.fn.system({"git", "clone", "https://github.com/folke/lazy.nvim.git", lazypath})
