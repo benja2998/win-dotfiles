@@ -104,7 +104,7 @@
         "defaults": 
         {
             "adjustIndistinguishableColors": "always",
-            "colorScheme": "Campbell",
+            "colorScheme": "coolnight",
             "cursorShape": "filledBox",
             "experimental.retroTerminalEffect": false,
             "font": 
@@ -113,7 +113,7 @@
                 "weight": "normal"
             },
             "intenseTextStyle": "all",
-            "opacity": 0,
+            "opacity": 29,
             "scrollbarState": "hidden",
             "useAcrylic": false
         },
@@ -163,7 +163,78 @@
             }
         ]
     },
-    "schemes": [],
+    "schemes": 
+    [
+        {
+            "background": "#0E1019",
+            "black": "#232323",
+            "blue": "#008DF8",
+            "brightBlack": "#444444",
+            "brightBlue": "#0092FF",
+            "brightCyan": "#67FFF0",
+            "brightGreen": "#ABE15B",
+            "brightPurple": "#9A5FEB",
+            "brightRed": "#FF2740",
+            "brightWhite": "#FFFFFF",
+            "brightYellow": "#FFD242",
+            "cursorColor": "#FF0018",
+            "cyan": "#00D8EB",
+            "foreground": "#FFFAF4",
+            "green": "#8CE10B",
+            "name": "Argonaut",
+            "purple": "#6D43A6",
+            "red": "#FF000F",
+            "selectionBackground": "#002A3B",
+            "white": "#FFFFFF",
+            "yellow": "#FFB900"
+        },
+        {
+            "background": "#000000",
+            "black": "#000000",
+            "blue": "#5555FF",
+            "brightBlack": "#555555",
+            "brightBlue": "#5555FF",
+            "brightCyan": "#55FFFF",
+            "brightGreen": "#55FF55",
+            "brightPurple": "#FF55FF",
+            "brightRed": "#FF5555",
+            "brightWhite": "#FFFFFF",
+            "brightYellow": "#FFFF55",
+            "cursorColor": "#BBBBBB",
+            "cyan": "#55FFFF",
+            "foreground": "#FFFFFF",
+            "green": "#55FF55",
+            "name": "Dark Pastel",
+            "purple": "#FF55FF",
+            "red": "#FF5555",
+            "selectionBackground": "#B5D5FF",
+            "white": "#BBBBBB",
+            "yellow": "#FFFF55"
+        },
+        {
+            "background": "#010C18",
+            "black": "#0B3B61",
+            "blue": "#1376F9",
+            "brightBlack": "#63686D",
+            "brightBlue": "#388EFF",
+            "brightCyan": "#FF6AD7",
+            "brightGreen": "#74FFD8",
+            "brightPurple": "#AE81FF",
+            "brightRed": "#FF54B0",
+            "brightWhite": "#60FBBF",
+            "brightYellow": "#FCF5AE",
+            "cursorColor": "#38FF9D",
+            "cyan": "#FF5ED4",
+            "foreground": "#ECDEF4",
+            "green": "#52FFD0",
+            "name": "coolnight",
+            "purple": "#C792EA",
+            "red": "#FF3A3A",
+            "selectionBackground": "#38FF9C",
+            "white": "#16FDA2",
+            "yellow": "#FFF383"
+        }
+    ],
     "showTabsInTitlebar": true,
     "theme": "My Mica Theme",
     "themes": 
