@@ -12,11 +12,7 @@ if [ ! -d "$NVIM_CONFIG" ]; then
 fi
 
 # Create symlink for init.lua
-if [ -e "$NVIM_CONFIG/init.lua" ]; then
-    echo "init.lua already exists, skipping..."
-else
-    ln -s "$DOTFILES_DIR/init.lua" "$NVIM_CONFIG/init.lua"
-    echo "Symlink for init.lua created."
-fi
+ln -sf "$DOTFILES_DIR/init.lua" "$NVIM_CONFIG/init.lua"
+echo "Symlink for init.lua created."
 
 echo "Neovim setup complete."
